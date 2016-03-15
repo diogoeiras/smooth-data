@@ -15,6 +15,8 @@
 
 #define INPUT_FILE "input.pgm"
 #define OUTPUT_FILE "output.pgm"
+#define OUTPUT_FILE_2 "output2.pgm"
+#define BUFFER_SIZE 1024
 
 using namespace std;
 
@@ -37,5 +39,8 @@ void smoothOperation(unsigned int ** inputMatrix, unsigned int ** outputMatrix,
 		PGMData const imageHeader);
 void writeSmoothImage(ofstream & outputFile, unsigned int ** outputMatrix,
 		PGMData const imageHeader);
+void smoothOperation2(unsigned int ** inputMatrix, unsigned int ** outputMatrix,
+		PGMData const imageHeader, unsigned int * bufferA,
+		unsigned int * bufferB, unsigned int * bufferC);
 
 #endif /* MAIN_HPP_ */
