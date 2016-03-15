@@ -3,9 +3,10 @@ Small exercise about smooth operation on images and reuse of data
 
 # What's done at the moment
 - Linear smoothing filter applied to pgm images
+    - Improved version with buffers
 
 # What should be done next
-- Use of buffers
+- Analysis of the different methods
 
 # Results
 
